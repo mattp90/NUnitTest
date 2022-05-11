@@ -18,7 +18,7 @@ namespace wsListini
             };
             var esito = await ElenchiClient.GetCategorieAsync(baseRequest, new dcCategoriaFilter()
             {
-                Tipo = 1
+                Tipo = 2
             });
             Print(esito);
             Assert.IsNotNull(esito);

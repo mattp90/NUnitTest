@@ -44,10 +44,10 @@ namespace AquardensNUnitTest
         {
             var user = new dcUser()
             {
-                UserName = "aquardens",
-                Password = "aquardens",
-                // UserName = "silvio.berlusconi@forzaitalia.it",
-                // Password = "S1lv101910!",
+                // UserName = "aquardens",
+                // Password = "aquardens",
+                UserName = "silvio.berlusconi@forzaitalia.it",
+                Password = "S1lv101910!",
                 UserType = 200
             };
             dcClientInfo clientInfo = new dcClientInfo();
