@@ -19,13 +19,13 @@ namespace wsAnagrafica
                 {
                     // Pagina = 1,
                     // NumeroMaxAnagrafiche = 10,
-                    Nome = "aquest",
+                    // Nome = "aquest",
                     // Cognome = "Aquardens",
                     // Cognome = "Test",
-                    // IdAnagrafica = new IdBox()
-                    // {
-                    //     Id = "ACC000120220118515832160000008"
-                    // }
+                    IdAnagrafica = new IdBox()
+                    {
+                        Id = "ACC000120220118515832160000008"
+                    }
                 }
             );
 

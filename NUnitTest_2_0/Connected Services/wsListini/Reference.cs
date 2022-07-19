@@ -13,7 +13,7 @@ namespace wsListini
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcEsito", Namespace="http://zitaca.com/gridservices")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.dcCategorieElencoEsito))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.dcListiniElencoEsito))]
@@ -67,7 +67,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcCategorieElencoEsito", Namespace="http://zitaca.com/gridservices")]
     public partial class dcCategorieElencoEsito : wsListini.dcEsito
     {
@@ -89,7 +89,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcListiniElencoEsito", Namespace="http://zitaca.com/gridservices")]
     public partial class dcListiniElencoEsito : wsListini.dcEsito
     {
@@ -111,7 +111,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcListino", Namespace="http://zitaca.com/gridservices")]
     public partial class dcListino : object
     {
@@ -373,7 +373,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcCategoria", Namespace="http://zitaca.com/gridservices")]
     public partial class dcCategoria : object
     {
@@ -470,7 +470,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="IdBox", Namespace="http://zitaca.com/gridservices")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.InfoBox))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.dcIva))]
@@ -509,7 +509,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="InfoBox", Namespace="http://zitaca.com/gridservices")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.dcIva))]
     public partial class InfoBox : wsListini.IdBox
@@ -532,7 +532,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcIva", Namespace="http://zitaca.com/gridservices")]
     public partial class dcIva : wsListini.InfoBox
     {
@@ -554,7 +554,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcComponenteInfo", Namespace="http://zitaca.com/gridservices")]
     public partial class dcComponenteInfo : object
     {
@@ -606,7 +606,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcTariffa", Namespace="http://zitaca.com/gridservices")]
     public partial class dcTariffa : object
     {
@@ -778,7 +778,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcListinoFilter", Namespace="http://zitaca.com/gridservices")]
     public partial class dcListinoFilter : object
     {
@@ -980,7 +980,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcBaseRequest", Namespace="http://zitaca.com/gridservices")]
     public partial class dcBaseRequest : object
     {
@@ -1047,7 +1047,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcBaseLanguage", Namespace="http://zitaca.com/gridservices")]
     public partial class dcBaseLanguage : object
     {
@@ -1084,7 +1084,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcCategoriaFilter", Namespace="http://zitaca.com/gridservices")]
     public partial class dcCategoriaFilter : object
     {
@@ -1121,7 +1121,7 @@ namespace wsListini
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcComponentiPacchettoRequest", Namespace="http://zitaca.com/gridservices")]
     public partial class dcComponentiPacchettoRequest : object
     {
@@ -1172,7 +1172,7 @@ namespace wsListini
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices", ConfigurationName="wsListini.iElenchi")]
     public interface iElenchi
     {
@@ -1187,13 +1187,13 @@ namespace wsListini
         System.Threading.Tasks.Task<wsListini.dcCategorieElencoEsito> GetCategorieAsync(string sessionId, string impianto, System.Nullable<int> tipo);
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public interface iElenchiChannel : wsListini.iElenchi, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public partial class iElenchiClient : System.ServiceModel.ClientBase<wsListini.iElenchi>, wsListini.iElenchi
     {
         
@@ -1302,7 +1302,7 @@ namespace wsListini
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/003", ConfigurationName="wsListini.iElenchi_003")]
     public interface iElenchi_003
     {
@@ -1311,13 +1311,13 @@ namespace wsListini
         System.Threading.Tasks.Task<wsListini.dcListiniElencoEsito> GetListiniAsync(wsListini.dcBaseRequest @base, wsListini.dcListinoFilter filter);
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public interface iElenchi_003Channel : wsListini.iElenchi_003, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public partial class iElenchi_003Client : System.ServiceModel.ClientBase<wsListini.iElenchi_003>, wsListini.iElenchi_003
     {
         
@@ -1416,7 +1416,7 @@ namespace wsListini
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/002", ConfigurationName="wsListini.iElenchi_002")]
     public interface iElenchi_002
     {
@@ -1435,13 +1435,13 @@ namespace wsListini
         System.Threading.Tasks.Task<wsListini.dcListiniElencoEsito> GetComponentiPacchettoAsync(wsListini.dcBaseRequest @base, wsListini.dcComponentiPacchettoRequest request);
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public interface iElenchi_002Channel : wsListini.iElenchi_002, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public partial class iElenchi_002Client : System.ServiceModel.ClientBase<wsListini.iElenchi_002>, wsListini.iElenchi_002
     {
         
@@ -1555,7 +1555,7 @@ namespace wsListini
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/001", ConfigurationName="wsListini.iElenchi_001")]
     public interface iElenchi_001
     {
@@ -1567,13 +1567,13 @@ namespace wsListini
         System.Threading.Tasks.Task<wsListini.dcCategorieElencoEsito> GetCategorieAsync(wsListini.dcBaseRequest @base, System.Nullable<int> tipo);
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public interface iElenchi_001Channel : wsListini.iElenchi_001, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public partial class iElenchi_001Client : System.ServiceModel.ClientBase<wsListini.iElenchi_001>, wsListini.iElenchi_001
     {
         

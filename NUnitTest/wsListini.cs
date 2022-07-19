@@ -48,22 +48,22 @@ namespace wsListini
         }
     }
     
-    public class Gestione : Base
-    {
-        protected iGestioneClient Client = new iGestioneClient();
-        
-        [Test]
-        public async Task  AddListini()
-        {
-            var esito = await Client.AddListiniAsync(SessionId, Impianto, new[] { new dcListino() });
-            Print(esito);
-            Assert.IsNotNull(esito);
-        }
-        
-        [OneTimeTearDown]
-        public void TearDownClient()
-        {
-            Client.Close();
-        }
-    }
+    // public class Gestione : Base
+    // {
+    //     protected iGestioneClient Client = new iGestioneClient();
+    //     
+    //     [Test]
+    //     public async Task  AddListini()
+    //     {
+    //         var esito = await Client.AddListiniAsync(SessionId, Impianto, new[] { new dcListino() });
+    //         Print(esito);
+    //         Assert.IsNotNull(esito);
+    //     }
+    //     
+    //     [OneTimeTearDown]
+    //     public void TearDownClient()
+    //     {
+    //         Client.Close();
+    //     }
+    // }
 }

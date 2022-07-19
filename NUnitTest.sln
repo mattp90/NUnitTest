@@ -1,8 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquardensNUnitTest", "NUnitTest\AquardensNUnitTest.csproj", "{399B1FD5-7E18-44D0-9FEC-E0A1F090DE85}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AquardensNUnitTest", "NUnitTest\AquardensNUnitTest.csproj", "{399B1FD5-7E18-44D0-9FEC-E0A1F090DE85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquardensDatabase", "Database\AquardensDatabase.csproj", "{0B748A32-5BB5-43BB-906D-8BA93F6A2ACB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AquardensDatabase", "Database\AquardensDatabase.csproj", "{0B748A32-5BB5-43BB-906D-8BA93F6A2ACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest_2_0", "NUnitTest_2_0\NUnitTest_2_0.csproj", "{D02A92B3-5DB4-4B56-8523-6AA2C68E8B2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +23,15 @@ Global
 		{0B748A32-5BB5-43BB-906D-8BA93F6A2ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B748A32-5BB5-43BB-906D-8BA93F6A2ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B748A32-5BB5-43BB-906D-8BA93F6A2ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02A92B3-5DB4-4B56-8523-6AA2C68E8B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02A92B3-5DB4-4B56-8523-6AA2C68E8B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02A92B3-5DB4-4B56-8523-6AA2C68E8B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02A92B3-5DB4-4B56-8523-6AA2C68E8B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB58B0BA-2FAE-41A5-B0E3-C63D9416ACD8}
 	EndGlobalSection
 EndGlobal

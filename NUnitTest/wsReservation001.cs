@@ -10,6 +10,7 @@ namespace wsReservation
     public class Booking001 : Base001
     {
         protected iBooking_001Client Client = new iBooking_001Client();
+        protected iBooking_002Client bookingClient = new iBooking_002Client();
 
         [Test]
         public async Task ControllaDisponibilita()
