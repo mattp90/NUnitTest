@@ -3,7 +3,7 @@ using System;
 using System.Threading.Tasks;
 using wsCommerce;
 
-namespace AquardensNUnitTest.Commerce
+namespace AquardensNUnitTest_2.Commerce
 {
     public class iReport_002 : Base001
     {
@@ -27,7 +27,7 @@ namespace AquardensNUnitTest.Commerce
                     },
                     CodiceVoucher = new IdBox()
                     {
-                        Id = "KTZ7V7LODAHPNNT"
+                        Id = "KTZ7V7LODAZSKX5"
                     } 
                 });
 

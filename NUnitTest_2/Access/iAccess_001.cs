@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using wsAccesso;
 
-namespace AquardensNUnitTest.Access
+namespace AquardensNUnitTest_2.Access
 {
     public class iAccess_001 : Base001
     {
@@ -71,14 +71,14 @@ namespace AquardensNUnitTest.Access
             var esito = await accessClient.RegisterAsync(baseRequest,
                 new dcUser()
                 {
+                    Nome = "Vasco",
+                    Cognome = "Rossi",
                     Cellulare = "123456789",
                     CodiceFiscale = "PZZMTT90S10M172Z",
-                    Cognome = "Test",
-                    DataNascita = new System.DateTime(2000, 1, 1),
-                    Email = "marco.marchi@test.com",
-                    Nome = "User",
+                    DataNascita = new System.DateTime(1990, 1, 1),
+                    Email = "vasco.rossi@test.com",
                     Password = "Password22",
-                    UserName = "marco.marchi@test.com",
+                    UserName = "vasco.rossi@test.com",
                     UserType = 200
                 },
                 new dcClientInfo()

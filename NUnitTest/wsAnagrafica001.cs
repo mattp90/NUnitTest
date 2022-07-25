@@ -19,15 +19,18 @@ namespace wsAnagrafica
                 SessionId = SessionId
             };
             
-            var esito = await ElenchiClient.GetAnagraficheAsync(baseRequest, new dcAnagraficaFilter() {
-                // Nome = "ELia",
-                // Cognome = "Elio",
-                UserName = "giulia.giulio@test.com"
-                // IdAnagrafica = new IdBox()
-                // {
-                //     Id = "ACC000120220620630179600000021"
-                // }
-            });
+            var esito = await ElenchiClient.GetAnagraficheAsync(baseRequest, 
+                new dcAnagraficaFilter() 
+                {
+                //     // Nome = "ELia",
+                //     // Cognome = "Elio",
+                UserName = "marco.marchi@test.com"
+                //     IdAnagrafica = new IdBox()
+                //     {
+                //         Id = "ACC000120220620630179600000021"
+                //     }
+                }
+            );
             Print(esito);
             Assert.IsNotNull(esito);
         }

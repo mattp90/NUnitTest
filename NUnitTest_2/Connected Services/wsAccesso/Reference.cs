@@ -13,7 +13,7 @@ namespace wsAccesso
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcUser", Namespace="http://zitaca.com/gridservices")]
     public partial class dcUser : object
     {
@@ -155,7 +155,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcClientInfo", Namespace="http://zitaca.com/gridservices")]
     public partial class dcClientInfo : object
     {
@@ -237,7 +237,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcEsito", Namespace="http://zitaca.com/gridservices")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsAccesso.dcImpiantiEsito))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsAccesso.dcDispositiviEsito))]
@@ -293,7 +293,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcImpiantiEsito", Namespace="http://zitaca.com/gridservices")]
     public partial class dcImpiantiEsito : wsAccesso.dcEsito
     {
@@ -315,7 +315,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcDispositiviEsito", Namespace="http://zitaca.com/gridservices")]
     public partial class dcDispositiviEsito : wsAccesso.dcEsito
     {
@@ -337,7 +337,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcPrivacyInfoEsito", Namespace="http://zitaca.com/gridservices")]
     public partial class dcPrivacyInfoEsito : wsAccesso.dcEsito
     {
@@ -359,7 +359,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcUserEsito", Namespace="http://zitaca.com/gridservices")]
     public partial class dcUserEsito : wsAccesso.dcEsito
     {
@@ -501,7 +501,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcProcedure", Namespace="http://zitaca.com/gridservices")]
     public partial class dcProcedure : object
     {
@@ -538,7 +538,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="InfoBox", Namespace="http://zitaca.com/gridservices")]
     public partial class InfoBox : wsAccesso.IdBox
     {
@@ -560,7 +560,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="IdBox", Namespace="http://zitaca.com/gridservices")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsAccesso.InfoBox))]
     public partial class IdBox : object
@@ -598,7 +598,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcBaseRequest", Namespace="http://zitaca.com/gridservices")]
     public partial class dcBaseRequest : object
     {
@@ -665,7 +665,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcBaseLanguage", Namespace="http://zitaca.com/gridservices")]
     public partial class dcBaseLanguage : object
     {
@@ -702,7 +702,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcConfirmRequest", Namespace="http://zitaca.com/gridservices")]
     public partial class dcConfirmRequest : object
     {
@@ -754,7 +754,7 @@ namespace wsAccesso
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcPasswordRequest", Namespace="http://zitaca.com/gridservices")]
     public partial class dcPasswordRequest : object
     {
@@ -805,7 +805,7 @@ namespace wsAccesso
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices", ConfigurationName="wsAccesso.iAccess")]
     public interface iAccess
     {
@@ -826,13 +826,13 @@ namespace wsAccesso
         System.Threading.Tasks.Task<wsAccesso.dcImpiantiEsito> GetImpiantiAsync(string impianto);
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     public interface iAccessChannel : wsAccesso.iAccess, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     public partial class iAccessClient : System.ServiceModel.ClientBase<wsAccesso.iAccess>, wsAccesso.iAccess
     {
         
@@ -951,7 +951,7 @@ namespace wsAccesso
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/001", ConfigurationName="wsAccesso.iAccess_001")]
     public interface iAccess_001
     {
@@ -987,13 +987,13 @@ namespace wsAccesso
         System.Threading.Tasks.Task<wsAccesso.dcEsito> RecoveryPasswordAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcPasswordRequest request);
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     public interface iAccess_001Channel : wsAccesso.iAccess_001, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     public partial class iAccess_001Client : System.ServiceModel.ClientBase<wsAccesso.iAccess_001>, wsAccesso.iAccess_001
     {
         

@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using wsCommerce;
 
-namespace AquardensNUnitTest.Commerce
+namespace AquardensNUnitTest_2.Commerce
 {
     public class iCommerce_001 : Base001
     {
@@ -59,7 +59,14 @@ namespace AquardensNUnitTest.Commerce
                             Importo = 50,
                             IsRegalo = false,
                             NominativoRegalo = "",
-                            Quantita = 1
+                            Quantita = 1,
+                            Componenti = new dcOrdineRigaComponente[]
+                            {
+                                new dcOrdineRigaComponente()
+                                {
+                                    
+                                }
+                            }
                         }
                         // ,
                         // new dcOrdineRiga()

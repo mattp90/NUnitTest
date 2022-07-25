@@ -1,12 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <OutputType>Library</OutputType>
+
+    <ApplicationIcon />
+
+    <StartupObject />
+
+    <RootNamespace>AquardensNUnitTest</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
     <PackageReference Include="NUnit" Version="3.13.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
@@ -15,6 +24,11 @@
     <PackageReference Include="System.ServiceModel.Http" Version="4.8.*" />
     <PackageReference Include="System.ServiceModel.NetTcp" Version="4.8.*" />
     <PackageReference Include="System.ServiceModel.Security" Version="4.8.*" />
+    <PackageReference Include="Z.EntityFramework.Extensions" Version="6.13.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Database\AquardensDatabase.csproj" />
   </ItemGroup>
 
 </Project>

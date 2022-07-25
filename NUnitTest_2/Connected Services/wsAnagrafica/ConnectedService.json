@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "ExtendedData": {
     "inputs": [
-      "http://zitacatest01.gymgest.it:9130/wsAnagrafica.svc"
+      "http://217.57.87.98:9100/wsAnagrafica.svc"
     ],
     "collectionTypes": [
       "System.Array",

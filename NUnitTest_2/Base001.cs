@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Threading.Tasks;
 using wsAccesso;
 
-namespace AquardensNUnitTest
+namespace AquardensNUnitTest_2
 {
     public class Base001
     {
@@ -41,10 +41,10 @@ namespace AquardensNUnitTest
             {
                 // UserName = "aquardens",
                 // Password = "aquardens",
-                // UserName = "sandro.sandri@test.com",
-                // UserName = "filippo.filippi@test.com",
-                UserName = "mina.mino@test.com",
+                UserName = "marco.marchi@test.com",
                 Password = "Password22",
+                // UserName = "vasco.rossi@test.com",
+                // Password = "Password22",
                 UserType = 200
             };
 

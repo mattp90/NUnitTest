@@ -1,4 +1,6 @@
 {
+  "providerId": "Microsoft.Tools.ServiceModel.Svcutil",
+  "version": "1.0.0",
   "ExtendedData": {
     "inputs": [
       "http://zitacatest01.gymgest.it:9130/wsCommerce.svc"
@@ -10,6 +12,7 @@
     "namespaceMappings": [
       "*, wsCommerce"
     ],
+    "outputFile": "Reference.cs",
     "references": [
       "Microsoft.CSharp, {Microsoft.CSharp, 4.0.1}",
       "Microsoft.DotNet.InternalAbstractions, {Microsoft.DotNet.InternalAbstractions, 1.0.0}",
@@ -58,12 +61,6 @@
       "System.Security.Cryptography.Xml, {System.Security.Cryptography.Xml, 4.7.0}",
       "System.Security.Permissions, {System.Security.Permissions, 4.7.0}",
       "System.Security.Principal.Windows, {System.Security.Principal.Windows, 4.7.0}",
-      "System.ServiceModel, {System.ServiceModel.Primitives, 4.8.1}",
-      "System.ServiceModel.Duplex, {System.ServiceModel.Duplex, 4.8.1}",
-      "System.ServiceModel.Http, {System.ServiceModel.Http, 4.8.1}",
-      "System.ServiceModel.NetTcp, {System.ServiceModel.NetTcp, 4.8.1}",
-      "System.ServiceModel.Primitives, {System.ServiceModel.Primitives, 4.8.1}",
-      "System.ServiceModel.Security, {System.ServiceModel.Security, 4.8.1}",
       "System.Text.Encoding, {System.Text.Encoding, 4.3.0}",
       "System.Text.Encoding.Extensions, {System.Text.Encoding.Extensions, 4.3.0}",
       "System.Text.RegularExpressions, {System.Text.RegularExpressions, 4.3.0}",

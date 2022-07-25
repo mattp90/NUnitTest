@@ -6,7 +6,7 @@ namespace wsCommerce
 {
     public class Report002 : Base001
     {
-        protected iReport_002Client ReportClient = new iReport_002Client();
+        protected iReport_001Client ReportClient = new iReport_001Client();
         
         [Test]
         public async Task GetAquisti()

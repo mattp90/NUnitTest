@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace wsAccesso
+namespace AquardensNUnitTest.wsAccesso_2
 {
     using System.Runtime.Serialization;
     
@@ -239,10 +239,10 @@ namespace wsAccesso
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcEsito", Namespace="http://zitaca.com/gridservices")]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsAccesso.dcImpiantiEsito))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsAccesso.dcDispositiviEsito))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsAccesso.dcPrivacyInfoEsito))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsAccesso.dcUserEsito))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(AquardensNUnitTest.wsAccesso_2.dcImpiantiEsito))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(AquardensNUnitTest.wsAccesso_2.dcDispositiviEsito))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(AquardensNUnitTest.wsAccesso_2.dcPrivacyInfoEsito))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(AquardensNUnitTest.wsAccesso_2.dcUserEsito))]
     public partial class dcEsito : object
     {
         
@@ -295,13 +295,13 @@ namespace wsAccesso
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcImpiantiEsito", Namespace="http://zitaca.com/gridservices")]
-    public partial class dcImpiantiEsito : wsAccesso.dcEsito
+    public partial class dcImpiantiEsito : AquardensNUnitTest.wsAccesso_2.dcEsito
     {
         
-        private wsAccesso.InfoBox[] ElencoField;
+        private AquardensNUnitTest.wsAccesso_2.InfoBox[] ElencoField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public wsAccesso.InfoBox[] Elenco
+        public AquardensNUnitTest.wsAccesso_2.InfoBox[] Elenco
         {
             get
             {
@@ -317,13 +317,13 @@ namespace wsAccesso
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcDispositiviEsito", Namespace="http://zitaca.com/gridservices")]
-    public partial class dcDispositiviEsito : wsAccesso.dcEsito
+    public partial class dcDispositiviEsito : AquardensNUnitTest.wsAccesso_2.dcEsito
     {
         
-        private wsAccesso.InfoBox[] DispositiviField;
+        private AquardensNUnitTest.wsAccesso_2.InfoBox[] DispositiviField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public wsAccesso.InfoBox[] Dispositivi
+        public AquardensNUnitTest.wsAccesso_2.InfoBox[] Dispositivi
         {
             get
             {
@@ -339,7 +339,7 @@ namespace wsAccesso
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcPrivacyInfoEsito", Namespace="http://zitaca.com/gridservices")]
-    public partial class dcPrivacyInfoEsito : wsAccesso.dcEsito
+    public partial class dcPrivacyInfoEsito : AquardensNUnitTest.wsAccesso_2.dcEsito
     {
         
         private string UrlDataTreatmentAuthorizationField;
@@ -361,7 +361,7 @@ namespace wsAccesso
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcUserEsito", Namespace="http://zitaca.com/gridservices")]
-    public partial class dcUserEsito : wsAccesso.dcEsito
+    public partial class dcUserEsito : AquardensNUnitTest.wsAccesso_2.dcEsito
     {
         
         private string CognomeField;
@@ -370,7 +370,7 @@ namespace wsAccesso
         
         private int[] EnabledProceduresField;
         
-        private wsAccesso.dcProcedure[] EnabledProceduresNewField;
+        private AquardensNUnitTest.wsAccesso_2.dcProcedure[] EnabledProceduresNewField;
         
         private string IdField;
         
@@ -422,7 +422,7 @@ namespace wsAccesso
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public wsAccesso.dcProcedure[] EnabledProceduresNew
+        public AquardensNUnitTest.wsAccesso_2.dcProcedure[] EnabledProceduresNew
         {
             get
             {
@@ -540,7 +540,7 @@ namespace wsAccesso
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="InfoBox", Namespace="http://zitaca.com/gridservices")]
-    public partial class InfoBox : wsAccesso.IdBox
+    public partial class InfoBox : AquardensNUnitTest.wsAccesso_2.IdBox
     {
         
         private string DescrizioneField;
@@ -562,7 +562,7 @@ namespace wsAccesso
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="IdBox", Namespace="http://zitaca.com/gridservices")]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsAccesso.InfoBox))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(AquardensNUnitTest.wsAccesso_2.InfoBox))]
     public partial class IdBox : object
     {
         
@@ -607,7 +607,7 @@ namespace wsAccesso
         
         private string ImpiantoField;
         
-        private wsAccesso.dcBaseLanguage LanguageField;
+        private AquardensNUnitTest.wsAccesso_2.dcBaseLanguage LanguageField;
         
         private string SessionIdField;
         
@@ -638,7 +638,7 @@ namespace wsAccesso
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public wsAccesso.dcBaseLanguage Language
+        public AquardensNUnitTest.wsAccesso_2.dcBaseLanguage Language
         {
             get
             {
@@ -806,34 +806,34 @@ namespace wsAccesso
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices", ConfigurationName="wsAccesso.iAccess")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices", ConfigurationName="AquardensNUnitTest.wsAccesso_2.iAccess")]
     public interface iAccess
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/iAccess/Login", ReplyAction="http://zitaca.com/gridservices/iAccess/LoginResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcUserEsito> LoginAsync(string impianto, wsAccesso.dcUser user, wsAccesso.dcClientInfo info);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcUserEsito> LoginAsync(string impianto, AquardensNUnitTest.wsAccesso_2.dcUser user, AquardensNUnitTest.wsAccesso_2.dcClientInfo info);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/iAccess/Logout", ReplyAction="http://zitaca.com/gridservices/iAccess/LogoutResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcEsito> LogoutAsync(string sessionId, string impianto);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> LogoutAsync(string sessionId, string impianto);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/iAccess/Register", ReplyAction="http://zitaca.com/gridservices/iAccess/RegisterResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcUserEsito> RegisterAsync(string impianto, wsAccesso.dcUser user, wsAccesso.dcClientInfo info);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcUserEsito> RegisterAsync(string impianto, AquardensNUnitTest.wsAccesso_2.dcUser user, AquardensNUnitTest.wsAccesso_2.dcClientInfo info);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/iAccess/ChangePassword", ReplyAction="http://zitaca.com/gridservices/iAccess/ChangePasswordResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcEsito> ChangePasswordAsync(string sessionId, string impianto, string oldPassword, string newPassword);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> ChangePasswordAsync(string sessionId, string impianto, string oldPassword, string newPassword);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/iAccess/GetImpianti", ReplyAction="http://zitaca.com/gridservices/iAccess/GetImpiantiResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcImpiantiEsito> GetImpiantiAsync(string impianto);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcImpiantiEsito> GetImpiantiAsync(string impianto);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    public interface iAccessChannel : wsAccesso.iAccess, System.ServiceModel.IClientChannel
+    public interface iAccessChannel : AquardensNUnitTest.wsAccesso_2.iAccess, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    public partial class iAccessClient : System.ServiceModel.ClientBase<wsAccesso.iAccess>, wsAccesso.iAccess
+    public partial class iAccessClient : System.ServiceModel.ClientBase<AquardensNUnitTest.wsAccesso_2.iAccess>, AquardensNUnitTest.wsAccesso_2.iAccess
     {
         
         /// <summary>
@@ -876,27 +876,27 @@ namespace wsAccesso
         {
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcUserEsito> LoginAsync(string impianto, wsAccesso.dcUser user, wsAccesso.dcClientInfo info)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcUserEsito> LoginAsync(string impianto, AquardensNUnitTest.wsAccesso_2.dcUser user, AquardensNUnitTest.wsAccesso_2.dcClientInfo info)
         {
             return base.Channel.LoginAsync(impianto, user, info);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcEsito> LogoutAsync(string sessionId, string impianto)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> LogoutAsync(string sessionId, string impianto)
         {
             return base.Channel.LogoutAsync(sessionId, impianto);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcUserEsito> RegisterAsync(string impianto, wsAccesso.dcUser user, wsAccesso.dcClientInfo info)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcUserEsito> RegisterAsync(string impianto, AquardensNUnitTest.wsAccesso_2.dcUser user, AquardensNUnitTest.wsAccesso_2.dcClientInfo info)
         {
             return base.Channel.RegisterAsync(impianto, user, info);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcEsito> ChangePasswordAsync(string sessionId, string impianto, string oldPassword, string newPassword)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> ChangePasswordAsync(string sessionId, string impianto, string oldPassword, string newPassword)
         {
             return base.Channel.ChangePasswordAsync(sessionId, impianto, oldPassword, newPassword);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcImpiantiEsito> GetImpiantiAsync(string impianto)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcImpiantiEsito> GetImpiantiAsync(string impianto)
         {
             return base.Channel.GetImpiantiAsync(impianto);
         }
@@ -929,7 +929,7 @@ namespace wsAccesso
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iAccess))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsAccesso.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsAccesso.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -952,49 +952,49 @@ namespace wsAccesso
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/001", ConfigurationName="wsAccesso.iAccess_001")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/001", ConfigurationName="AquardensNUnitTest.wsAccesso_2.iAccess_001")]
     public interface iAccess_001
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/Login", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/LoginResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcUserEsito> LoginAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcUser user, wsAccesso.dcClientInfo info);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcUserEsito> LoginAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcUser user, AquardensNUnitTest.wsAccesso_2.dcClientInfo info);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/Logout", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/LogoutResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcEsito> LogoutAsync(wsAccesso.dcBaseRequest @base);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> LogoutAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/Register", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/RegisterResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcUserEsito> RegisterAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcUser user, wsAccesso.dcClientInfo info);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcUserEsito> RegisterAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcUser user, AquardensNUnitTest.wsAccesso_2.dcClientInfo info);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/ChangePassword", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/ChangePasswordResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcEsito> ChangePasswordAsync(wsAccesso.dcBaseRequest @base, string oldPassword, string newPassword);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> ChangePasswordAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, string oldPassword, string newPassword);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/GetImpianti", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/GetImpiantiResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcImpiantiEsito> GetImpiantiAsync(wsAccesso.dcBaseRequest @base);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcImpiantiEsito> GetImpiantiAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/GetDispositivi", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/GetDispositiviResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcDispositiviEsito> GetDispositiviAsync(wsAccesso.dcBaseRequest @base, System.Nullable<int> tipo);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcDispositiviEsito> GetDispositiviAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, System.Nullable<int> tipo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/GetPrivacyInfo", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/GetPrivacyInfoResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcPrivacyInfoEsito> GetPrivacyInfoAsync(wsAccesso.dcBaseRequest @base);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcPrivacyInfoEsito> GetPrivacyInfoAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/ConfirmRegister", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/ConfirmRegisterResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcEsito> ConfirmRegisterAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcConfirmRequest request);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> ConfirmRegisterAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcConfirmRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/RecoveryConfirmCode", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/RecoveryConfirmCodeResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcEsito> RecoveryConfirmCodeAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcConfirmRequest request);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> RecoveryConfirmCodeAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcConfirmRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iAccess_001/RecoveryPassword", ReplyAction="http://zitaca.com/gridservices/001/iAccess_001/RecoveryPasswordResponse")]
-        System.Threading.Tasks.Task<wsAccesso.dcEsito> RecoveryPasswordAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcPasswordRequest request);
+        System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> RecoveryPasswordAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcPasswordRequest request);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    public interface iAccess_001Channel : wsAccesso.iAccess_001, System.ServiceModel.IClientChannel
+    public interface iAccess_001Channel : AquardensNUnitTest.wsAccesso_2.iAccess_001, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    public partial class iAccess_001Client : System.ServiceModel.ClientBase<wsAccesso.iAccess_001>, wsAccesso.iAccess_001
+    public partial class iAccess_001Client : System.ServiceModel.ClientBase<AquardensNUnitTest.wsAccesso_2.iAccess_001>, AquardensNUnitTest.wsAccesso_2.iAccess_001
     {
         
         /// <summary>
@@ -1037,52 +1037,52 @@ namespace wsAccesso
         {
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcUserEsito> LoginAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcUser user, wsAccesso.dcClientInfo info)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcUserEsito> LoginAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcUser user, AquardensNUnitTest.wsAccesso_2.dcClientInfo info)
         {
             return base.Channel.LoginAsync(@base, user, info);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcEsito> LogoutAsync(wsAccesso.dcBaseRequest @base)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> LogoutAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base)
         {
             return base.Channel.LogoutAsync(@base);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcUserEsito> RegisterAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcUser user, wsAccesso.dcClientInfo info)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcUserEsito> RegisterAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcUser user, AquardensNUnitTest.wsAccesso_2.dcClientInfo info)
         {
             return base.Channel.RegisterAsync(@base, user, info);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcEsito> ChangePasswordAsync(wsAccesso.dcBaseRequest @base, string oldPassword, string newPassword)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> ChangePasswordAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, string oldPassword, string newPassword)
         {
             return base.Channel.ChangePasswordAsync(@base, oldPassword, newPassword);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcImpiantiEsito> GetImpiantiAsync(wsAccesso.dcBaseRequest @base)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcImpiantiEsito> GetImpiantiAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base)
         {
             return base.Channel.GetImpiantiAsync(@base);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcDispositiviEsito> GetDispositiviAsync(wsAccesso.dcBaseRequest @base, System.Nullable<int> tipo)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcDispositiviEsito> GetDispositiviAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, System.Nullable<int> tipo)
         {
             return base.Channel.GetDispositiviAsync(@base, tipo);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcPrivacyInfoEsito> GetPrivacyInfoAsync(wsAccesso.dcBaseRequest @base)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcPrivacyInfoEsito> GetPrivacyInfoAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base)
         {
             return base.Channel.GetPrivacyInfoAsync(@base);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcEsito> ConfirmRegisterAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcConfirmRequest request)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> ConfirmRegisterAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcConfirmRequest request)
         {
             return base.Channel.ConfirmRegisterAsync(@base, request);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcEsito> RecoveryConfirmCodeAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcConfirmRequest request)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> RecoveryConfirmCodeAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcConfirmRequest request)
         {
             return base.Channel.RecoveryConfirmCodeAsync(@base, request);
         }
         
-        public System.Threading.Tasks.Task<wsAccesso.dcEsito> RecoveryPasswordAsync(wsAccesso.dcBaseRequest @base, wsAccesso.dcPasswordRequest request)
+        public System.Threading.Tasks.Task<AquardensNUnitTest.wsAccesso_2.dcEsito> RecoveryPasswordAsync(AquardensNUnitTest.wsAccesso_2.dcBaseRequest @base, AquardensNUnitTest.wsAccesso_2.dcPasswordRequest request)
         {
             return base.Channel.RecoveryPasswordAsync(@base, request);
         }
@@ -1115,7 +1115,7 @@ namespace wsAccesso
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iAccess_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsAccesso.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsAccesso.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }

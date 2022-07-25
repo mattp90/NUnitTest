@@ -41,9 +41,12 @@ namespace AquardensNUnitTest
             {
                 // UserName = "aquardens",
                 // Password = "aquardens",
+                // UserName = "marco.marchi@test.com",
+                // UserName = "filippo.filippi@test.com",
                 // UserName = "sandro.sandri@test.com",
                 // UserName = "filippo.filippi@test.com",
                 UserName = "mina.mino@test.com",
+                // UserName = "marco.marchi@test.com",
                 Password = "Password22",
                 UserType = 200
             };

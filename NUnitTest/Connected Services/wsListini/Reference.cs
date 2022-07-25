@@ -16,6 +16,7 @@ namespace wsListini
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcEsito", Namespace="http://zitaca.com/gridservices")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.dcCategorieElencoEsito))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.dcEsitoIdBox))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.dcListiniElencoEsito))]
     public partial class dcEsito : object
     {
@@ -90,6 +91,28 @@ namespace wsListini
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="dcEsitoIdBox", Namespace="http://zitaca.com/gridservices")]
+    public partial class dcEsitoIdBox : wsListini.dcEsito
+    {
+        
+        private wsListini.IdBox ValueField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsListini.IdBox Value
+        {
+            get
+            {
+                return this.ValueField;
+            }
+            set
+            {
+                this.ValueField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcListiniElencoEsito", Namespace="http://zitaca.com/gridservices")]
     public partial class dcListiniElencoEsito : wsListini.dcEsito
     {
@@ -113,6 +136,7 @@ namespace wsListini
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcListino", Namespace="http://zitaca.com/gridservices")]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(wsListini.dcListinoCompleto))]
     public partial class dcListino : object
     {
         
@@ -142,13 +166,9 @@ namespace wsListini
         
         private wsListini.dcTariffa TariffaField;
         
-        private wsListini.dcTariffa[] TariffeField;
-        
         private string TestoAggiuntivoField;
         
         private int TipoField;
-        
-        private System.Nullable<int> TipoPacchettoField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<decimal> Acconto
@@ -320,19 +340,6 @@ namespace wsListini
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public wsListini.dcTariffa[] Tariffe
-        {
-            get
-            {
-                return this.TariffeField;
-            }
-            set
-            {
-                this.TariffeField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public string TestoAggiuntivo
         {
             get
@@ -355,19 +362,6 @@ namespace wsListini
             set
             {
                 this.TipoField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> TipoPacchetto
-        {
-            get
-            {
-                return this.TipoPacchettoField;
-            }
-            set
-            {
-                this.TipoPacchettoField = value;
             }
         }
     }
@@ -561,8 +555,6 @@ namespace wsListini
         
         private wsListini.InfoBox CategoriaField;
         
-        private string IdField;
-        
         private int QuantitaField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
@@ -575,19 +567,6 @@ namespace wsListini
             set
             {
                 this.CategoriaField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Id
-        {
-            get
-            {
-                return this.IdField;
-            }
-            set
-            {
-                this.IdField = value;
             }
         }
         
@@ -611,17 +590,7 @@ namespace wsListini
     public partial class dcTariffa : object
     {
         
-        private System.DateTime AlField;
-        
-        private string AlleField;
-        
-        private System.DateTime DalField;
-        
-        private string DalleField;
-        
         private string DescrizioneField;
-        
-        private string GiorniField;
         
         private wsListini.IdBox IdField;
         
@@ -634,58 +603,6 @@ namespace wsListini
         private System.Nullable<bool> ScontoAbilitatoField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Al
-        {
-            get
-            {
-                return this.AlField;
-            }
-            set
-            {
-                this.AlField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Alle
-        {
-            get
-            {
-                return this.AlleField;
-            }
-            set
-            {
-                this.AlleField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Dal
-        {
-            get
-            {
-                return this.DalField;
-            }
-            set
-            {
-                this.DalField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Dalle
-        {
-            get
-            {
-                return this.DalleField;
-            }
-            set
-            {
-                this.DalleField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Descrizione
         {
             get
@@ -695,19 +612,6 @@ namespace wsListini
             set
             {
                 this.DescrizioneField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Giorni
-        {
-            get
-            {
-                return this.GiorniField;
-            }
-            set
-            {
-                this.GiorniField = value;
             }
         }
         
@@ -779,6 +683,13 @@ namespace wsListini
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="dcListinoCompleto", Namespace="http://zitaca.com/gridservices")]
+    public partial class dcListinoCompleto : wsListini.dcListino
+    {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcListinoFilter", Namespace="http://zitaca.com/gridservices")]
     public partial class dcListinoFilter : object
     {
@@ -800,8 +711,6 @@ namespace wsListini
         private System.Nullable<bool> IsGiornoFestivoField;
         
         private System.Nullable<int> TariffaRichiestaField;
-        
-        private int TariffaValiditaField;
         
         private int[] TipiListiniField;
         
@@ -923,19 +832,6 @@ namespace wsListini
             set
             {
                 this.TariffaRichiestaField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int TariffaValidita
-        {
-            get
-            {
-                return this.TariffaValiditaField;
-            }
-            set
-            {
-                this.TariffaValiditaField = value;
             }
         }
         
@@ -1130,8 +1026,6 @@ namespace wsListini
         
         private wsListini.IdBox IdPacchettoField;
         
-        private wsListini.IdBox IdTariffaListinoField;
-        
         [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<bool> DatiAggiuntivi
         {
@@ -1155,19 +1049,6 @@ namespace wsListini
             set
             {
                 this.IdPacchettoField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public wsListini.IdBox IdTariffaListino
-        {
-            get
-            {
-                return this.IdTariffaListinoField;
-            }
-            set
-            {
-                this.IdTariffaListinoField = value;
             }
         }
     }
@@ -1280,7 +1161,7 @@ namespace wsListini
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iElenchi))
             {
-                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsListini.svc");
+                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsListini.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -1303,22 +1184,22 @@ namespace wsListini
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/003", ConfigurationName="wsListini.iElenchi_003")]
-    public interface iElenchi_003
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices", ConfigurationName="wsListini.iGestione")]
+    public interface iGestione
     {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/003/iElenchi_003/GetListini", ReplyAction="http://zitaca.com/gridservices/003/iElenchi_003/GetListiniResponse")]
-        System.Threading.Tasks.Task<wsListini.dcListiniElencoEsito> GetListiniAsync(wsListini.dcBaseRequest @base, wsListini.dcListinoFilter filter);
+        [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/iGestione/AddListini", ReplyAction="http://zitaca.com/gridservices/iGestione/AddListiniResponse")]
+        System.Threading.Tasks.Task<wsListini.dcListiniElencoEsito> AddListiniAsync(string sessionId, string impianto, wsListini.dcListino[] listini);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    public interface iElenchi_003Channel : wsListini.iElenchi_003, System.ServiceModel.IClientChannel
+    public interface iGestioneChannel : wsListini.iGestione, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    public partial class iElenchi_003Client : System.ServiceModel.ClientBase<wsListini.iElenchi_003>, wsListini.iElenchi_003
+    public partial class iGestioneClient : System.ServiceModel.ClientBase<wsListini.iGestione>, wsListini.iGestione
     {
         
         /// <summary>
@@ -1328,42 +1209,42 @@ namespace wsListini
         /// <param name="clientCredentials">The client credentials</param>
         static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
         
-        public iElenchi_003Client() : 
-                base(iElenchi_003Client.GetDefaultBinding(), iElenchi_003Client.GetDefaultEndpointAddress())
+        public iGestioneClient() : 
+                base(iGestioneClient.GetDefaultBinding(), iGestioneClient.GetDefaultEndpointAddress())
         {
-            this.Endpoint.Name = EndpointConfiguration.BasicHttpBinding_iElenchi_003.ToString();
+            this.Endpoint.Name = EndpointConfiguration.BasicHttpBinding_iGestione.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public iElenchi_003Client(EndpointConfiguration endpointConfiguration) : 
-                base(iElenchi_003Client.GetBindingForEndpoint(endpointConfiguration), iElenchi_003Client.GetEndpointAddress(endpointConfiguration))
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public iElenchi_003Client(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
-                base(iElenchi_003Client.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
+        public iGestioneClient(EndpointConfiguration endpointConfiguration) : 
+                base(iGestioneClient.GetBindingForEndpoint(endpointConfiguration), iGestioneClient.GetEndpointAddress(endpointConfiguration))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public iElenchi_003Client(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(iElenchi_003Client.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+        public iGestioneClient(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
+                base(iGestioneClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public iElenchi_003Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public iGestioneClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(iGestioneClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+        {
+            this.Endpoint.Name = endpointConfiguration.ToString();
+            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+        }
+        
+        public iGestioneClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress)
         {
         }
         
-        public System.Threading.Tasks.Task<wsListini.dcListiniElencoEsito> GetListiniAsync(wsListini.dcBaseRequest @base, wsListini.dcListinoFilter filter)
+        public System.Threading.Tasks.Task<wsListini.dcListiniElencoEsito> AddListiniAsync(string sessionId, string impianto, wsListini.dcListino[] listini)
         {
-            return base.Channel.GetListiniAsync(@base, filter);
+            return base.Channel.AddListiniAsync(sessionId, impianto, listini);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
@@ -1378,7 +1259,7 @@ namespace wsListini
         
         private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iElenchi_003))
+            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iGestione))
             {
                 System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
                 result.MaxBufferSize = int.MaxValue;
@@ -1392,27 +1273,27 @@ namespace wsListini
         
         private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iElenchi_003))
+            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iGestione))
             {
-                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsListini.svc");
+                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsListini.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
         
         private static System.ServiceModel.Channels.Binding GetDefaultBinding()
         {
-            return iElenchi_003Client.GetBindingForEndpoint(EndpointConfiguration.BasicHttpBinding_iElenchi_003);
+            return iGestioneClient.GetBindingForEndpoint(EndpointConfiguration.BasicHttpBinding_iGestione);
         }
         
         private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
         {
-            return iElenchi_003Client.GetEndpointAddress(EndpointConfiguration.BasicHttpBinding_iElenchi_003);
+            return iGestioneClient.GetEndpointAddress(EndpointConfiguration.BasicHttpBinding_iGestione);
         }
         
         public enum EndpointConfiguration
         {
             
-            BasicHttpBinding_iElenchi_003,
+            BasicHttpBinding_iGestione,
         }
     }
     
@@ -1533,7 +1414,7 @@ namespace wsListini
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iElenchi_002))
             {
-                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsListini.svc");
+                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsListini.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -1655,7 +1536,7 @@ namespace wsListini
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iElenchi_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsListini.svc");
+                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsListini.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -1674,6 +1555,120 @@ namespace wsListini
         {
             
             BasicHttpBinding_iElenchi_001,
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/001", ConfigurationName="wsListini.iGestione_001")]
+    public interface iGestione_001
+    {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/001/iGestione_001/SetListino", ReplyAction="http://zitaca.com/gridservices/001/iGestione_001/SetListinoResponse")]
+        System.Threading.Tasks.Task<wsListini.dcEsitoIdBox> SetListinoAsync(wsListini.dcBaseRequest @base, wsListini.dcListinoCompleto listino, System.Nullable<bool> visibile);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    public interface iGestione_001Channel : wsListini.iGestione_001, System.ServiceModel.IClientChannel
+    {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    public partial class iGestione_001Client : System.ServiceModel.ClientBase<wsListini.iGestione_001>, wsListini.iGestione_001
+    {
+        
+        /// <summary>
+        /// Implement this partial method to configure the service endpoint.
+        /// </summary>
+        /// <param name="serviceEndpoint">The endpoint to configure</param>
+        /// <param name="clientCredentials">The client credentials</param>
+        static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
+        
+        public iGestione_001Client() : 
+                base(iGestione_001Client.GetDefaultBinding(), iGestione_001Client.GetDefaultEndpointAddress())
+        {
+            this.Endpoint.Name = EndpointConfiguration.BasicHttpBinding_iGestione_001.ToString();
+            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+        }
+        
+        public iGestione_001Client(EndpointConfiguration endpointConfiguration) : 
+                base(iGestione_001Client.GetBindingForEndpoint(endpointConfiguration), iGestione_001Client.GetEndpointAddress(endpointConfiguration))
+        {
+            this.Endpoint.Name = endpointConfiguration.ToString();
+            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+        }
+        
+        public iGestione_001Client(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
+                base(iGestione_001Client.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
+        {
+            this.Endpoint.Name = endpointConfiguration.ToString();
+            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+        }
+        
+        public iGestione_001Client(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(iGestione_001Client.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+        {
+            this.Endpoint.Name = endpointConfiguration.ToString();
+            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+        }
+        
+        public iGestione_001Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress)
+        {
+        }
+        
+        public System.Threading.Tasks.Task<wsListini.dcEsitoIdBox> SetListinoAsync(wsListini.dcBaseRequest @base, wsListini.dcListinoCompleto listino, System.Nullable<bool> visibile)
+        {
+            return base.Channel.SetListinoAsync(@base, listino, visibile);
+        }
+        
+        public virtual System.Threading.Tasks.Task OpenAsync()
+        {
+            return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
+        }
+        
+        public virtual System.Threading.Tasks.Task CloseAsync()
+        {
+            return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginClose(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndClose));
+        }
+        
+        private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
+        {
+            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iGestione_001))
+            {
+                System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
+                result.MaxBufferSize = int.MaxValue;
+                result.ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max;
+                result.MaxReceivedMessageSize = int.MaxValue;
+                result.AllowCookies = true;
+                return result;
+            }
+            throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
+        }
+        
+        private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
+        {
+            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iGestione_001))
+            {
+                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsListini.svc");
+            }
+            throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
+        }
+        
+        private static System.ServiceModel.Channels.Binding GetDefaultBinding()
+        {
+            return iGestione_001Client.GetBindingForEndpoint(EndpointConfiguration.BasicHttpBinding_iGestione_001);
+        }
+        
+        private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
+        {
+            return iGestione_001Client.GetEndpointAddress(EndpointConfiguration.BasicHttpBinding_iGestione_001);
+        }
+        
+        public enum EndpointConfiguration
+        {
+            
+            BasicHttpBinding_iGestione_001,
         }
     }
 }

@@ -550,7 +550,11 @@ namespace wsReservation
         
         private System.Nullable<System.DateTime> DataOraFineField;
         
+        private System.Nullable<System.DateTime> DataOraFineUtenteField;
+        
         private System.Nullable<System.DateTime> DataOraInizioField;
+        
+        private System.Nullable<System.DateTime> DataOraInizioUtenteField;
         
         private System.Nullable<int> FilaField;
         
@@ -613,6 +617,19 @@ namespace wsReservation
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DataOraFineUtente
+        {
+            get
+            {
+                return this.DataOraFineUtenteField;
+            }
+            set
+            {
+                this.DataOraFineUtenteField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<System.DateTime> DataOraInizio
         {
             get
@@ -622,6 +639,19 @@ namespace wsReservation
             set
             {
                 this.DataOraInizioField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DataOraInizioUtente
+        {
+            get
+            {
+                return this.DataOraInizioUtenteField;
+            }
+            set
+            {
+                this.DataOraInizioUtenteField = value;
             }
         }
         
@@ -861,6 +891,8 @@ namespace wsReservation
         
         private System.Nullable<System.DateTime> DataOraInizioUtenteField;
         
+        private wsReservation.dcTariffaPosti[] ElencoTariffePostiField;
+        
         private System.Nullable<int> PostiField;
         
         private wsReservation.dcBkgRisorsa RisorsaField;
@@ -914,6 +946,19 @@ namespace wsReservation
             set
             {
                 this.DataOraInizioUtenteField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsReservation.dcTariffaPosti[] ElencoTariffePosti
+        {
+            get
+            {
+                return this.ElencoTariffePostiField;
+            }
+            set
+            {
+                this.ElencoTariffePostiField = value;
             }
         }
         
@@ -1007,6 +1052,215 @@ namespace wsReservation
             set
             {
                 this.TipoField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="dcTariffaPosti", Namespace="http://zitaca.com/gridservices")]
+    public partial class dcTariffaPosti : object
+    {
+        
+        private System.Nullable<int> PostiField;
+        
+        private wsReservation.dcTariffa TariffaField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> Posti
+        {
+            get
+            {
+                return this.PostiField;
+            }
+            set
+            {
+                this.PostiField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsReservation.dcTariffa Tariffa
+        {
+            get
+            {
+                return this.TariffaField;
+            }
+            set
+            {
+                this.TariffaField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="dcTariffa", Namespace="http://zitaca.com/gridservices")]
+    public partial class dcTariffa : object
+    {
+        
+        private System.DateTime AlField;
+        
+        private string AlleField;
+        
+        private System.DateTime DalField;
+        
+        private string DalleField;
+        
+        private string DescrizioneField;
+        
+        private string GiorniField;
+        
+        private wsReservation.IdBox IdField;
+        
+        private wsReservation.IdBox IdTariffaListinoField;
+        
+        private decimal ImportoField;
+        
+        private System.Nullable<bool> RateField;
+        
+        private System.Nullable<bool> ScontoAbilitatoField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Al
+        {
+            get
+            {
+                return this.AlField;
+            }
+            set
+            {
+                this.AlField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Alle
+        {
+            get
+            {
+                return this.AlleField;
+            }
+            set
+            {
+                this.AlleField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Dal
+        {
+            get
+            {
+                return this.DalField;
+            }
+            set
+            {
+                this.DalField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Dalle
+        {
+            get
+            {
+                return this.DalleField;
+            }
+            set
+            {
+                this.DalleField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Descrizione
+        {
+            get
+            {
+                return this.DescrizioneField;
+            }
+            set
+            {
+                this.DescrizioneField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Giorni
+        {
+            get
+            {
+                return this.GiorniField;
+            }
+            set
+            {
+                this.GiorniField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsReservation.IdBox Id
+        {
+            get
+            {
+                return this.IdField;
+            }
+            set
+            {
+                this.IdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsReservation.IdBox IdTariffaListino
+        {
+            get
+            {
+                return this.IdTariffaListinoField;
+            }
+            set
+            {
+                this.IdTariffaListinoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Importo
+        {
+            get
+            {
+                return this.ImportoField;
+            }
+            set
+            {
+                this.ImportoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<bool> Rate
+        {
+            get
+            {
+                return this.RateField;
+            }
+            set
+            {
+                this.RateField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<bool> ScontoAbilitato
+        {
+            get
+            {
+                return this.ScontoAbilitatoField;
+            }
+            set
+            {
+                this.ScontoAbilitatoField = value;
             }
         }
     }
@@ -1955,103 +2209,6 @@ namespace wsReservation
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="dcTariffa", Namespace="http://zitaca.com/gridservices")]
-    public partial class dcTariffa : object
-    {
-        
-        private string DescrizioneField;
-        
-        private wsReservation.IdBox IdField;
-        
-        private wsReservation.IdBox IdTariffaListinoField;
-        
-        private decimal ImportoField;
-        
-        private System.Nullable<bool> RateField;
-        
-        private System.Nullable<bool> ScontoAbilitatoField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Descrizione
-        {
-            get
-            {
-                return this.DescrizioneField;
-            }
-            set
-            {
-                this.DescrizioneField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public wsReservation.IdBox Id
-        {
-            get
-            {
-                return this.IdField;
-            }
-            set
-            {
-                this.IdField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public wsReservation.IdBox IdTariffaListino
-        {
-            get
-            {
-                return this.IdTariffaListinoField;
-            }
-            set
-            {
-                this.IdTariffaListinoField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal Importo
-        {
-            get
-            {
-                return this.ImportoField;
-            }
-            set
-            {
-                this.ImportoField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<bool> Rate
-        {
-            get
-            {
-                return this.RateField;
-            }
-            set
-            {
-                this.RateField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<bool> ScontoAbilitato
-        {
-            get
-            {
-                return this.ScontoAbilitatoField;
-            }
-            set
-            {
-                this.ScontoAbilitatoField = value;
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="dcBkgFilter", Namespace="http://zitaca.com/gridservices")]
     public partial class dcBkgFilter : object
     {
@@ -2161,6 +2318,8 @@ namespace wsReservation
         
         private wsReservation.IdBox IdListinoField;
         
+        private wsReservation.IdBox IdTariffaListinoField;
+        
         private string OperatorSexField;
         
         private System.Nullable<System.DateTime> OraAlleField;
@@ -2218,6 +2377,19 @@ namespace wsReservation
             set
             {
                 this.IdListinoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsReservation.IdBox IdTariffaListino
+        {
+            get
+            {
+                return this.IdTariffaListinoField;
+            }
+            set
+            {
+                this.IdTariffaListinoField = value;
             }
         }
         
@@ -2598,7 +2770,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iPlanningAgende))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -2728,7 +2900,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iPlanningCommon))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -2850,7 +3022,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iCommonElenchi))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -2996,7 +3168,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iBooking))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -3126,7 +3298,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iPlanningCorsi))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -3240,7 +3412,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iBookingConfig))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -3354,7 +3526,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iCommonLists))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -3468,7 +3640,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iReservationConfig))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -3614,7 +3786,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iBooking_002))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -3745,7 +3917,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iPlanningAgende_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -3887,7 +4059,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iPlanningCommon_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -4011,7 +4183,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iCommonElenchi_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -4173,7 +4345,7 @@ namespace wsReservation
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iBooking_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsReservation.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsReservation.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }

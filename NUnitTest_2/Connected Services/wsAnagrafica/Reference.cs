@@ -243,6 +243,8 @@ namespace wsAnagrafica
         
         private string EmailField;
         
+        private string IdClienteCodaField;
+        
         private wsAnagrafica.IdBox IdUtenzaField;
         
         private byte[] ImmagineField;
@@ -351,6 +353,19 @@ namespace wsAnagrafica
             set
             {
                 this.EmailField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IdClienteCoda
+        {
+            get
+            {
+                return this.IdClienteCodaField;
+            }
+            set
+            {
+                this.IdClienteCodaField = value;
             }
         }
         
@@ -1770,6 +1785,8 @@ namespace wsAnagrafica
     public partial class dcAnagraficaFilter : object
     {
         
+        private string CodiceFiscaleField;
+        
         private string CognomeField;
         
         private System.Nullable<System.DateTime> DataAzioneAlField;
@@ -1801,6 +1818,19 @@ namespace wsAnagrafica
         private System.Nullable<int> TipoRicercaClienteField;
         
         private string UserNameField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CodiceFiscale
+        {
+            get
+            {
+                return this.CodiceFiscaleField;
+            }
+            set
+            {
+                this.CodiceFiscaleField = value;
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string Cognome
@@ -2200,7 +2230,7 @@ namespace wsAnagrafica
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iGestione))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsAnagrafica.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsAnagrafica.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -2322,7 +2352,7 @@ namespace wsAnagrafica
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iElenchi))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsAnagrafica.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsAnagrafica.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -2460,7 +2490,7 @@ namespace wsAnagrafica
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iGestione_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsAnagrafica.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsAnagrafica.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -2598,7 +2628,7 @@ namespace wsAnagrafica
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iElenchi_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsAnagrafica.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsAnagrafica.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }

@@ -1,21 +1,18 @@
 ﻿using NUnit.Framework;
 using System.Linq;
 using System.Threading.Tasks;
-using AquardensNUnitTest.wsAccesso_2;
 using wsListini;
-using dcBaseRequest = wsListini.dcBaseRequest;
-using IdBox = wsListini.IdBox;
 
-namespace AquardensNUnitTest.Listini
+namespace AquardensNUnitTest_2.Listini
 {
     public class iElenchi_002 : Base001
     {
         protected iElenchi_002Client elenchiClient = new iElenchi_002Client();
-        
+        protected iElenchi_003Client elenchiClient003 = new iElenchi_003Client();
+
         [Test]
         public async Task GetCategorie()
         {
-            wsAccesso_2.iAccessClient a = new iAccessClient(); 
             var baseRequest = new dcBaseRequest()
             {
                 Impianto = Impianto,
@@ -24,10 +21,10 @@ namespace AquardensNUnitTest.Listini
 
             var esito = await elenchiClient.GetCategorieAsync(baseRequest,
                 new dcCategoriaFilter()
-                // {
-                //     DatiAggiuntivi = false,
-                //     Tipo = 2
-                // }
+                {
+                    DatiAggiuntivi = false,
+                    Tipo = 2
+                }
             );
 
             Print(esito);
@@ -46,11 +43,14 @@ namespace AquardensNUnitTest.Listini
             var esito = await elenchiClient.GetComponentiPacchettoAsync(baseRequest, 
                 new dcComponentiPacchettoRequest()
                 {
-                    DatiAggiuntivi = false,
+                    // DatiAggiuntivi = true,
+                    IdTariffaListino = new IdBox()
+                    {
+                        Id = "130301020211022392715510027587"
+                    },
                     IdPacchetto = new IdBox()
                     {
-                        Id = "",
-                        IdEsterno = ""
+                        Id = "130301020211022392436220027540"
                     }
                 }
             );
@@ -66,15 +66,11 @@ namespace AquardensNUnitTest.Listini
             {
                 Impianto = Impianto,
                 SessionId = SessionId
-                //SessionId = "9ff2ea57-22e4-4618-b1eb-b7788130c9fb"
                 // SessionId = "990f86a0-c553-451b-af39-045ff63832d1"
             };
 
-            var esito = await elenchiClient.GetListiniAsync(baseRequest,
+            var esito = await elenchiClient003.GetListiniAsync(baseRequest,
                  new dcListinoFilter()
-                 {
-                     IdCategoria = "130301020211018459479130025530"
-                 }
                  // {
                     // IdListino = new IdBox()
                     // {
@@ -96,7 +92,7 @@ namespace AquardensNUnitTest.Listini
                     //     }
                     // },
                     // IsGiornoFestivo = true,
-                    // TariffaRichiesta = 1, // discriminante per farsi dare le tariffe richieste (0 = default)
+                    // TariffaRichiesta = 1, // discriminante per farsi dare le tariffe richieste (0 = default) 
                     // TipiListini = new int[] { },
                     // TipoPagamentoPrenotazione = 0,
                     // Utenza = ""
@@ -114,8 +110,7 @@ namespace AquardensNUnitTest.Listini
             var baseRequest = new dcBaseRequest()
             {
                 Impianto = Impianto,
-                // SessionId = SessionId
-                SessionId = "45614cea-c9e7-4d8a-9fc4-7b56795dc1ba"
+                SessionId = SessionId
             };
 
             var esito = await elenchiClient.GetListiniAsync(baseRequest, null);
@@ -132,8 +127,7 @@ namespace AquardensNUnitTest.Listini
             var baseRequest = new dcBaseRequest()
             {
                 Impianto = Impianto,
-                // SessionId = SessionId
-                SessionId = "990f86a0-c553-451b-af39-045ff63832d1"
+                SessionId = SessionId
             };
 
             var esito = await elenchiClient.GetListiniAsync(baseRequest, null);
@@ -151,7 +145,6 @@ namespace AquardensNUnitTest.Listini
             {
                 Impianto = Impianto,
                 SessionId = SessionId
-                // SessionId = "990f86a0-c553-451b-af39-045ff63832d1"
             };
 
             var esito = await elenchiClient.GetListiniAsync(baseRequest,
@@ -172,8 +165,7 @@ namespace AquardensNUnitTest.Listini
             var baseRequest = new dcBaseRequest()
             {
                 Impianto = Impianto,
-                // SessionId = SessionId
-                SessionId = "990f86a0-c553-451b-af39-045ff63832d1"
+                SessionId = SessionId
             };
 
             var esito = await elenchiClient.GetListiniAsync(baseRequest,
@@ -195,7 +187,6 @@ namespace AquardensNUnitTest.Listini
             {
                 Impianto = Impianto,
                 SessionId = SessionId
-                // SessionId = "990f86a0-c553-451b-af39-045ff63832d1"
             };
 
             var esito = await elenchiClient.GetListiniAsync(baseRequest,
@@ -216,8 +207,7 @@ namespace AquardensNUnitTest.Listini
             var baseRequest = new dcBaseRequest()
             {
                 Impianto = Impianto,
-                // SessionId = SessionId
-                SessionId = "990f86a0-c553-451b-af39-045ff63832d1"
+                SessionId = SessionId
             };
 
             var esito = await elenchiClient.GetListiniAsync(baseRequest,

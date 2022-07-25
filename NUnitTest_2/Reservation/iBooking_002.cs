@@ -1,13 +1,19 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
+using wsListini;
 using wsReservation;
+using dcBaseRequest = wsReservation.dcBaseRequest;
+using dcTariffa = wsReservation.dcTariffa;
+using IdBox = wsReservation.IdBox;
 
-namespace AquardensNUnitTest.Reservation
+namespace AquardensNUnitTest_2.Reservation
 {
     public class iBooking002 : Base001
     {
         protected iBooking_002Client bookingClient = new iBooking_002Client();
+        protected wsListini.iElenchi_003Client _listiniClient = new iElenchi_003Client();
 
         [Test]
         public async Task Conferma()
@@ -33,7 +39,7 @@ namespace AquardensNUnitTest.Reservation
             Print(esito);
             Assert.IsNotNull(esito);
         }
-        
+
         [Test]
         public async Task Elimina() 
         {
@@ -81,23 +87,23 @@ namespace AquardensNUnitTest.Reservation
             var baseRequest = new dcBaseRequest()
             {
                 Impianto = Impianto,
-                // SessionId = "45614cea-c9e7-4d8a-9fc4-7b56795dc1ba"
                 SessionId = SessionId
+                // SessionId = "45614cea-c9e7-4d8a-9fc4-7b56795dc1ba"
             };
-
+            
             var esito = await bookingClient.GetDisponibilitaAsync(baseRequest,
                 new dcBkgDispRequest()
                 {
-                    DataInizio = new DateTime(2022, 7, 14, 8, 0, 0),
-                    DataFine = new DateTime(2022, 7, 31, 20, 0, 0),
+                    DataInizio = new DateTime(2022, 1, 1, 8, 0, 0),
+                    DataFine = new DateTime(2022, 12, 31, 20, 0, 0),
                     IdAnagrafica = new IdBox()
                     {
-                        Id = "ACC000120220621454605180000088"
+                        Id = "ACC000120220721529335830000020"
                         // IdEsterno = ""
                     },
                     IdListino = new IdBox()
                     {
-                        Id = "130300420171025443104150025354"
+                        Id = "130300420171025443629770025427"
                         // IdEsterno = ""
                     },
                     // OperatorSex = "",
@@ -111,7 +117,8 @@ namespace AquardensNUnitTest.Reservation
                     //         IdEsterno = ""
                     //     }
                     // }
-                });
+                }
+            );
 
             Print(esito);
             Assert.IsNotNull(esito);

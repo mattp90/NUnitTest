@@ -1,4 +1,6 @@
 {
+  "providerId": "Microsoft.Tools.ServiceModel.Svcutil",
+  "version": "1.0.0",
   "ExtendedData": {
     "inputs": [
       "http://zitacatest01.gymgest.it:9130/wsAccesso.svc"
@@ -10,6 +12,7 @@
     "namespaceMappings": [
       "*, wsAccesso"
     ],
+    "outputFile": "Reference.cs",
     "references": [
       "Microsoft.CSharp, {Microsoft.CSharp, 4.0.1}",
       "Microsoft.DotNet.InternalAbstractions, {Microsoft.DotNet.InternalAbstractions, 1.0.0}",

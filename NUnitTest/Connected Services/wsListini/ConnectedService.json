@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "ExtendedData": {
     "inputs": [
-      "http://217.57.87.98:9100/wsListini.svc"
+      "http://zitacatest01.gymgest.it:9130/wsListini.svc"
     ],
     "collectionTypes": [
       "System.Array",

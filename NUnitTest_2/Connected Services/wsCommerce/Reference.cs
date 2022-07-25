@@ -85,6 +85,10 @@ namespace wsCommerce
     public partial class dcOrdineRiga : object
     {
         
+        private wsCommerce.dcOrdineRigaComponente[] ComponentiField;
+        
+        private System.Nullable<System.DateTime> DataScadenzaField;
+        
         private wsCommerce.IdBox IdListinoField;
         
         private wsCommerce.IdBox IdOperatoreField;
@@ -106,6 +110,32 @@ namespace wsCommerce
         private string NominativoRegaloField;
         
         private System.Nullable<int> QuantitaField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.dcOrdineRigaComponente[] Componenti
+        {
+            get
+            {
+                return this.ComponentiField;
+            }
+            set
+            {
+                this.ComponentiField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DataScadenza
+        {
+            get
+            {
+                return this.DataScadenzaField;
+            }
+            set
+            {
+                this.DataScadenzaField = value;
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public wsCommerce.IdBox IdListino
@@ -285,6 +315,103 @@ namespace wsCommerce
             set
             {
                 this.IdEsternoField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="dcOrdineRigaComponente", Namespace="http://zitaca.com/gridservices")]
+    public partial class dcOrdineRigaComponente : object
+    {
+        
+        private string IdCategoriaField;
+        
+        private string IdComponenteField;
+        
+        private wsCommerce.IdBox IdListinoField;
+        
+        private decimal ImportoField;
+        
+        private int QtField;
+        
+        private int TipoListinoField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IdCategoria
+        {
+            get
+            {
+                return this.IdCategoriaField;
+            }
+            set
+            {
+                this.IdCategoriaField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IdComponente
+        {
+            get
+            {
+                return this.IdComponenteField;
+            }
+            set
+            {
+                this.IdComponenteField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.IdBox IdListino
+        {
+            get
+            {
+                return this.IdListinoField;
+            }
+            set
+            {
+                this.IdListinoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Importo
+        {
+            get
+            {
+                return this.ImportoField;
+            }
+            set
+            {
+                this.ImportoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Qt
+        {
+            get
+            {
+                return this.QtField;
+            }
+            set
+            {
+                this.QtField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TipoListino
+        {
+            get
+            {
+                return this.TipoListinoField;
+            }
+            set
+            {
+                this.TipoListinoField = value;
             }
         }
     }
@@ -1250,6 +1377,8 @@ namespace wsCommerce
         
         private System.Nullable<int> QtField;
         
+        private wsCommerce.dcTariffa TariffaField;
+        
         private int TipoRegaloField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
@@ -1435,6 +1564,19 @@ namespace wsCommerce
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.dcTariffa Tariffa
+        {
+            get
+            {
+                return this.TariffaField;
+            }
+            set
+            {
+                this.TariffaField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int TipoRegalo
         {
             get
@@ -1444,6 +1586,178 @@ namespace wsCommerce
             set
             {
                 this.TipoRegaloField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="dcTariffa", Namespace="http://zitaca.com/gridservices")]
+    public partial class dcTariffa : object
+    {
+        
+        private System.DateTime AlField;
+        
+        private string AlleField;
+        
+        private System.DateTime DalField;
+        
+        private string DalleField;
+        
+        private string DescrizioneField;
+        
+        private string GiorniField;
+        
+        private wsCommerce.IdBox IdField;
+        
+        private wsCommerce.IdBox IdTariffaListinoField;
+        
+        private decimal ImportoField;
+        
+        private System.Nullable<bool> RateField;
+        
+        private System.Nullable<bool> ScontoAbilitatoField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Al
+        {
+            get
+            {
+                return this.AlField;
+            }
+            set
+            {
+                this.AlField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Alle
+        {
+            get
+            {
+                return this.AlleField;
+            }
+            set
+            {
+                this.AlleField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Dal
+        {
+            get
+            {
+                return this.DalField;
+            }
+            set
+            {
+                this.DalField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Dalle
+        {
+            get
+            {
+                return this.DalleField;
+            }
+            set
+            {
+                this.DalleField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Descrizione
+        {
+            get
+            {
+                return this.DescrizioneField;
+            }
+            set
+            {
+                this.DescrizioneField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Giorni
+        {
+            get
+            {
+                return this.GiorniField;
+            }
+            set
+            {
+                this.GiorniField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.IdBox Id
+        {
+            get
+            {
+                return this.IdField;
+            }
+            set
+            {
+                this.IdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.IdBox IdTariffaListino
+        {
+            get
+            {
+                return this.IdTariffaListinoField;
+            }
+            set
+            {
+                this.IdTariffaListinoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Importo
+        {
+            get
+            {
+                return this.ImportoField;
+            }
+            set
+            {
+                this.ImportoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<bool> Rate
+        {
+            get
+            {
+                return this.RateField;
+            }
+            set
+            {
+                this.RateField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<bool> ScontoAbilitato
+        {
+            get
+            {
+                return this.ScontoAbilitatoField;
+            }
+            set
+            {
+                this.ScontoAbilitatoField = value;
             }
         }
     }
@@ -1535,6 +1849,8 @@ namespace wsCommerce
         
         private System.Nullable<int> QtField;
         
+        private wsCommerce.dcTariffa TariffaField;
+        
         [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<System.DateTime> DataFruizione
         {
@@ -1625,6 +1941,19 @@ namespace wsCommerce
                 this.QtField = value;
             }
         }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.dcTariffa Tariffa
+        {
+            get
+            {
+                return this.TariffaField;
+            }
+            set
+            {
+                this.TariffaField = value;
+            }
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1634,6 +1963,8 @@ namespace wsCommerce
     {
         
         private int BarcodeFormatTypeField;
+        
+        private string CodiceCUPField;
         
         private wsCommerce.IdBox CodiceVoucherField;
         
@@ -1681,6 +2012,8 @@ namespace wsCommerce
         
         private System.Nullable<int> StatusField;
         
+        private wsCommerce.dcTariffa TariffaField;
+        
         private System.Nullable<int> TipoField;
         
         private int TipoRegaloField;
@@ -1695,6 +2028,19 @@ namespace wsCommerce
             set
             {
                 this.BarcodeFormatTypeField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CodiceCUP
+        {
+            get
+            {
+                return this.CodiceCUPField;
+            }
+            set
+            {
+                this.CodiceCUPField = value;
             }
         }
         
@@ -1998,6 +2344,19 @@ namespace wsCommerce
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.dcTariffa Tariffa
+        {
+            get
+            {
+                return this.TariffaField;
+            }
+            set
+            {
+                this.TariffaField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<int> Tipo
         {
             get
@@ -2034,7 +2393,11 @@ namespace wsCommerce
         
         private System.Nullable<System.DateTime> DataOraFineField;
         
+        private System.Nullable<System.DateTime> DataOraFineUtenteField;
+        
         private System.Nullable<System.DateTime> DataOraInizioField;
+        
+        private System.Nullable<System.DateTime> DataOraInizioUtenteField;
         
         private System.Nullable<int> FilaField;
         
@@ -2097,6 +2460,19 @@ namespace wsCommerce
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DataOraFineUtente
+        {
+            get
+            {
+                return this.DataOraFineUtenteField;
+            }
+            set
+            {
+                this.DataOraFineUtenteField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<System.DateTime> DataOraInizio
         {
             get
@@ -2106,6 +2482,19 @@ namespace wsCommerce
             set
             {
                 this.DataOraInizioField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DataOraInizioUtente
+        {
+            get
+            {
+                return this.DataOraInizioUtenteField;
+            }
+            set
+            {
+                this.DataOraInizioUtenteField = value;
             }
         }
         
@@ -3343,13 +3732,19 @@ namespace wsCommerce
         
         private string CentroRicavoField;
         
+        private string CodiceVoucherField;
+        
         private string DescrizioneField;
+        
+        private wsCommerce.dcDocRiferito DocRiferitoField;
         
         private wsCommerce.IdBox IdCodiceIvaField;
         
         private wsCommerce.IdBox IdListinoField;
         
         private decimal ImportoField;
+        
+        private bool NoShowField;
         
         private string PianoDeiContiField;
         
@@ -3369,6 +3764,19 @@ namespace wsCommerce
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CodiceVoucher
+        {
+            get
+            {
+                return this.CodiceVoucherField;
+            }
+            set
+            {
+                this.CodiceVoucherField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Descrizione
         {
             get
@@ -3378,6 +3786,19 @@ namespace wsCommerce
             set
             {
                 this.DescrizioneField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.dcDocRiferito DocRiferito
+        {
+            get
+            {
+                return this.DocRiferitoField;
+            }
+            set
+            {
+                this.DocRiferitoField = value;
             }
         }
         
@@ -3417,6 +3838,19 @@ namespace wsCommerce
             set
             {
                 this.ImportoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool NoShow
+        {
+            get
+            {
+                return this.NoShowField;
+            }
+            set
+            {
+                this.NoShowField = value;
             }
         }
         
@@ -3495,6 +3929,73 @@ namespace wsCommerce
             set
             {
                 this.TipoField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="dcDocRiferito", Namespace="http://zitaca.com/gridservices")]
+    public partial class dcDocRiferito : object
+    {
+        
+        private wsCommerce.IdBox IdDocumentoField;
+        
+        private decimal ImportoField;
+        
+        private int NumeroField;
+        
+        private wsCommerce.TypeBox TipoDocumentoField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.IdBox IdDocumento
+        {
+            get
+            {
+                return this.IdDocumentoField;
+            }
+            set
+            {
+                this.IdDocumentoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Importo
+        {
+            get
+            {
+                return this.ImportoField;
+            }
+            set
+            {
+                this.ImportoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Numero
+        {
+            get
+            {
+                return this.NumeroField;
+            }
+            set
+            {
+                this.NumeroField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public wsCommerce.TypeBox TipoDocumento
+        {
+            get
+            {
+                return this.TipoDocumentoField;
+            }
+            set
+            {
+                this.TipoDocumentoField = value;
             }
         }
     }
@@ -4678,6 +5179,8 @@ namespace wsCommerce
         
         private System.Nullable<bool> LoadReservationsField;
         
+        private bool OrdinaPerCodiceCUPField;
+        
         private System.Nullable<int> TipoAcqustoField;
         
         private System.Nullable<int> TipoRegaloField;
@@ -4744,6 +5247,19 @@ namespace wsCommerce
             set
             {
                 this.LoadReservationsField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool OrdinaPerCodiceCUP
+        {
+            get
+            {
+                return this.OrdinaPerCodiceCUPField;
+            }
+            set
+            {
+                this.OrdinaPerCodiceCUPField = value;
             }
         }
         
@@ -5098,7 +5614,7 @@ namespace wsCommerce
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iCommerce))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsCommerce.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsCommerce.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -5220,7 +5736,7 @@ namespace wsCommerce
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iReport))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsCommerce.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsCommerce.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -5350,7 +5866,7 @@ namespace wsCommerce
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iDocumenti))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsCommerce.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsCommerce.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -5472,7 +5988,7 @@ namespace wsCommerce
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iFirmaDigitale))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsCommerce.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsCommerce.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -5491,120 +6007,6 @@ namespace wsCommerce
         {
             
             BasicHttpBinding_iFirmaDigitale,
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://zitaca.com/gridservices/002", ConfigurationName="wsCommerce.iReport_002")]
-    public interface iReport_002
-    {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://zitaca.com/gridservices/002/iReport_002/GetAcquisti", ReplyAction="http://zitaca.com/gridservices/002/iReport_002/GetAcquistiResponse")]
-        System.Threading.Tasks.Task<wsCommerce.dcAcquistiEsito> GetAcquistiAsync(wsCommerce.dcBaseRequest @base, wsCommerce.dcAcquistoFilter filter);
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    public interface iReport_002Channel : wsCommerce.iReport_002, System.ServiceModel.IClientChannel
-    {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "1.0.0")]
-    public partial class iReport_002Client : System.ServiceModel.ClientBase<wsCommerce.iReport_002>, wsCommerce.iReport_002
-    {
-        
-        /// <summary>
-        /// Implement this partial method to configure the service endpoint.
-        /// </summary>
-        /// <param name="serviceEndpoint">The endpoint to configure</param>
-        /// <param name="clientCredentials">The client credentials</param>
-        static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
-        
-        public iReport_002Client() : 
-                base(iReport_002Client.GetDefaultBinding(), iReport_002Client.GetDefaultEndpointAddress())
-        {
-            this.Endpoint.Name = EndpointConfiguration.BasicHttpBinding_iReport_002.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public iReport_002Client(EndpointConfiguration endpointConfiguration) : 
-                base(iReport_002Client.GetBindingForEndpoint(endpointConfiguration), iReport_002Client.GetEndpointAddress(endpointConfiguration))
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public iReport_002Client(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
-                base(iReport_002Client.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public iReport_002Client(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(iReport_002Client.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public iReport_002Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress)
-        {
-        }
-        
-        public System.Threading.Tasks.Task<wsCommerce.dcAcquistiEsito> GetAcquistiAsync(wsCommerce.dcBaseRequest @base, wsCommerce.dcAcquistoFilter filter)
-        {
-            return base.Channel.GetAcquistiAsync(@base, filter);
-        }
-        
-        public virtual System.Threading.Tasks.Task OpenAsync()
-        {
-            return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
-        }
-        
-        public virtual System.Threading.Tasks.Task CloseAsync()
-        {
-            return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginClose(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndClose));
-        }
-        
-        private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
-        {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iReport_002))
-            {
-                System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
-                result.MaxBufferSize = int.MaxValue;
-                result.ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max;
-                result.MaxReceivedMessageSize = int.MaxValue;
-                result.AllowCookies = true;
-                return result;
-            }
-            throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
-        }
-        
-        private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
-        {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iReport_002))
-            {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsCommerce.svc");
-            }
-            throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
-        }
-        
-        private static System.ServiceModel.Channels.Binding GetDefaultBinding()
-        {
-            return iReport_002Client.GetBindingForEndpoint(EndpointConfiguration.BasicHttpBinding_iReport_002);
-        }
-        
-        private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
-        {
-            return iReport_002Client.GetEndpointAddress(EndpointConfiguration.BasicHttpBinding_iReport_002);
-        }
-        
-        public enum EndpointConfiguration
-        {
-            
-            BasicHttpBinding_iReport_002,
         }
     }
     
@@ -5780,7 +6182,7 @@ namespace wsCommerce
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iCommerce_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsCommerce.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsCommerce.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
@@ -5918,7 +6320,7 @@ namespace wsCommerce
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_iReport_001))
             {
-                return new System.ServiceModel.EndpointAddress("http://zitacatest01.gymgest.it:9130/wsCommerce.svc");
+                return new System.ServiceModel.EndpointAddress("http://217.57.87.98:9100/wsCommerce.svc");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
